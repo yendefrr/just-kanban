@@ -1,0 +1,18 @@
+# Lock files
+pnpm-lock.yaml
+
+# Dependency directories
+node_modules/
+
+# Build files
+dist/
+build/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*

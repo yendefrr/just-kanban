@@ -5,11 +5,11 @@ Now you can create cards and columns, drag and drop it.
 PrimeVue there cause I am lazy.
 
 ## Installation
-`npm install github:yendefrr/just-kanban`
+`npm install just-kanban`
 
-`pnpm install github:yendefrr/just-kanban`
+`pnpm install just-kanban`
 
-`yarn add github:yendefrr/just-kanban`
+`yarn add just-kanban`
 
 ## Usage
 ```JavaScript

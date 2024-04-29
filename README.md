@@ -6,11 +6,13 @@ PrimeVue there cause I am lazy.
 
 ## Installation
 `npm install github:yendefrr/just-kanban`
+
 `pnpm install github:yendefrr/just-kanban`
+
 `yarn add github:yendefrr/just-kanban`
 
 ## Usage
-```Vue
+```JavaScript
 import Board from "yendefrr/just-kanban"
 
 let editMode = false;

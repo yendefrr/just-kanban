@@ -13,7 +13,7 @@ PrimeVue there cause I am lazy.
 
 ## Usage
 ```JavaScript
-import Board from "yendefrr/just-kanban"
+import { Board } from "just-kanban";
 
 let editMode = false;
 let columns = ["To Do", "In Progress", "Done"];

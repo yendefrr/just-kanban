@@ -46,7 +46,6 @@ const drop = (event) => {
 const dragStart = (event) => {
   event.dataTransfer.setData("text/plain", props.status);
   onDrag.value = true;
-  console.log(onDrag.value);
 };
 </script>
 

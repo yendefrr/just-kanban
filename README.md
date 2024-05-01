@@ -7,11 +7,17 @@ PrimeVue there cause I am lazy.
 ![Arc-CRM@2x](https://github.com/yendefrr/just-kanban/assets/91500932/72e219dd-bc3a-4315-9e25-4363dbf6760c)
 
 ## Installation
-`npm install just-kanban`
+```bash
+npm install just-kanban
+```
 
-`pnpm install just-kanban`
+```bash
+pnpm install just-kanban
+```
 
-`yarn add just-kanban`
+```bash
+yarn add just-kanban
+```
 
 ## Usage
 ```JavaScript

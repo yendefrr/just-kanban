@@ -4,6 +4,7 @@
   "description": "Simple but working kanban board based on PrimeVue",
   "main": "index.js",
   "scripts": {
+    "dev": "vite --host",
     "build": "vite build"
   },
   "keywords": [],

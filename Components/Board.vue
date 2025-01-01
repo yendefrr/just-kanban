@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-import Button from "primevue/button";
+import Button from "./Button.vue";
 import InputText from "primevue/inputtext";
 import Dialog from "primevue/dialog";
 
@@ -76,7 +76,7 @@ const editStatus = (newStatus, oldStatus) => {
         @editStatus="editStatus"
       ></KanbanColumn>
     </div>
-    <Button class="h-[40px] min-w-[40px]" icon="pi pi-plus" @click="visibleDialog = true" outlined />
+    <Button class="h-[40px]" icon="pi pi-plus" label="Добавить" @click="visibleDialog = true" outlined />
   </div>
 
   <Dialog v-model:visible="visibleDialog" modal header="New column" :style="{ width: '25rem' }">

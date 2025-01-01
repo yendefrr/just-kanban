@@ -2,8 +2,8 @@
 import { ref } from "vue";
 
 import Button from "./Button.vue";
-import InputText from "primevue/inputtext";
-import Dialog from "primevue/dialog";
+import InputText from "./InputText.vue";
+import Dialog from "./Dialog.vue";
 
 import KanbanColumn from "./Column.vue";
 
@@ -19,7 +19,9 @@ const dialogData = ref({
 });
 
 const addColumn = () => {
-  columnStatuses.value.push(dialogData.value.title);
+  if (dialogData.value.title) {
+    columnStatuses.value.push(dialogData.value.title);
+  }
 
   dialogData.value.title = "";
   visibleDialog.value = false;
@@ -76,16 +78,15 @@ const editStatus = (newStatus, oldStatus) => {
         @editStatus="editStatus"
       ></KanbanColumn>
     </div>
-    <Button class="h-[40px]" icon="pi pi-plus" label="Добавить" @click="visibleDialog = true" outlined />
+    <Button class="h-[40px]" label="Add" @click="visibleDialog = true" outlined />
   </div>
 
-  <Dialog v-model:visible="visibleDialog" modal header="New column" :style="{ width: '25rem' }">
+  <Dialog v-model:visible="visibleDialog" header="New column" :style="{ width: '25rem' }">
     <div class="flex flex-col gap-1 mb-3">
-      <label for="username" class="font-semibold w-6rem">Title</label>
-      <InputText id="username" class="flex-auto" v-model="dialogData.title" />
+      <InputText id="username" label="Title" v-model="dialogData.title" />
     </div>
     <div class="flex">
-      <Button class="w-full" type="button" label="Save" @click="addColumn" v-bind:disabled="dialogData.title.length < 1"></Button>
+      <Button class="w-full" type="button" label="Save" @click="addColumn" :disabled="dialogData.title.length < 1" />
     </div>
   </Dialog>
 </template>
